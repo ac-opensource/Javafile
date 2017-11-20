@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lbl_name"
+                tools:context="info.App.VaniteaPOS.activity.Main">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bg_main"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="700dp"
+            android:layout_height="55dp"
+            android:background="@drawable/company"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <include layout="@layout/content_main"
+        />
+
+    <include
+        layout="@layout/contentlist_main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageButton
+        android:id="@+id/btnricemeals"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_alignTop="@+id/btnunlimeals"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ricemeals"
+        android:onClick="onClick"
+        android:text="@string/btnricemeals"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnunlimeals"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btnbbundles"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="45dp"
+        android:layout_toLeftOf="@+id/btnbbundles"
+        android:layout_toStartOf="@+id/btnbbundles"
+        android:background="@drawable/unlimeals"
+        android:onClick="onClick"
+        android:text="@string/btnricemeals"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnbbundles"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnLogout"
+        android:layout_marginTop="41dp"
+        android:layout_toLeftOf="@+id/btnLogout"
+        android:layout_toStartOf="@+id/btnLogout"
+        android:background="@drawable/bbundles"
+        android:onClick="onClick"
+        android:text="@string/btnricemeals"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnpastas"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnunlimeals"
+        android:layout_alignStart="@+id/btnunlimeals"
+        android:layout_alignTop="@+id/btnsandwich"
+        android:background="@drawable/pasta"
+        android:onClick="onClick"
+        android:text="@string/btnricemeals"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btncombo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnbbundles"
+        android:layout_alignStart="@+id/btnbbundles"
+        android:layout_alignTop="@+id/btnpastas"
+        android:background="@drawable/combo"
+        android:onClick="onClick"
+        android:text="@string/btnsnack"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnsandwich"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnricemeals"
+        android:layout_alignStart="@+id/btnricemeals"
+        android:layout_below="@+id/btnricemeals"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sandwiches"
+        android:onClick="onClick"
+        android:text="@string/btnsnack"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnsnacks"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnpastas"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnpastas"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/snacks"
+        android:onClick="onClick"
+        android:text="@string/btnsnack"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btncdrinks"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btncombo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btncombo"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/cdrinks"
+        android:onClick="onClick"
+        android:text="@string/btnsnack"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnricemeals"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Table no. "
+        android:textColor="@color/back"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/ettable"
+        android:layout_width="235dp"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:background="@color/back"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Table number here.."
+        android:inputType="number"
+        android:textColorHint="@color/input_register"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ettable"
+        android:layout_toStartOf="@+id/ettable"
+        android:background="@drawable/log"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/btnhotdrinks"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/hotdrinks"
+            android:onClick="onClick"
+            android:text="@string/btnhotdrinks"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnsnacks"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:text="Subtotal"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/txtsubtotal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/ettable"
+        android:layout_alignRight="@+id/ettable"
+        android:gravity="right"
+        android:text="0.00"
+        android:textSize="34dp"/>
+
+
+</RelativeLayout>
